@@ -21,7 +21,7 @@ library(rnoaa)
 Text on importing **Cardinals Data**.
 
 ```{r}
-
+library(readr)
 ```
 
 ## Plotting Basic 
