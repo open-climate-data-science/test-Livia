@@ -26,12 +26,35 @@ cardinal <- read_csv("cardinal_data.csv")
 #cardinal%>%filter(colnames(cardinal)!="MV")
 ```
 
+
+```{r}
+cardinal_data <- read_csv("cardinal_data.csv", 
++     col_types = cols(`Average Air Temperature (F)` = col_number(), 
++         `Maximum Air Temperature (F)` = col_number(), 
++         `Minimum Air Temperature (F)` = col_number(), 
++         `Average Experimental Leaf Wetness (mV)` = col_number(), 
++         `Total Precipitation (in)` = col_number(), 
++         `Average Relative Humidity (%)` = col_number(), 
++         `Average Soil Moisture (m3/m3)` = col_number(), 
++         `Average Soil Temperature (F)` = col_number(), 
++         `Average Solar Radiation (W/m2)` = col_number(), 
++         `Average Station Pressure (mb)` = col_number()))
+
+```
+
 ## Plotting Basic 
 
 Text on *plotting*. 
+
+Here is a good link: *Livia puts link here*
+
 
 ```{r}
 
 ```
 
+
+```{r}
+ggplot(cardinal, aes(x="Date",y="Total Precipitation (in)"))+geom_point()
+```
 
