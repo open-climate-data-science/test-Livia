@@ -1,7 +1,7 @@
 # test-Livia
-Practice repository for Livia
-Text practice
 
-:) :)
+Dr. Saia, 
 
-I am testing the github Desktop and editing this file in R. 
+We don't have write access to the tutorial repos so we are writing them here for now. 
+
+-nick & livia
