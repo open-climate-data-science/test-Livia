@@ -22,6 +22,8 @@ Text on importing **Cardinals Data**.
 
 ```{r}
 library(readr)
+cardinal <- read_csv("cardinal_data.csv")
+cardinal
 ```
 
 ## Plotting Basic 
