@@ -20,6 +20,8 @@ library(rnoaa)
 
 Text on importing **Cardinals Data**.
 
+Talk about str and functions like that.
+
 ```{r}
 library(readr)
 cardinal <- read_csv("cardinal_data.csv")
@@ -62,6 +64,6 @@ ggplot(cardinal_data,aes(x= date ,y= AvgLw))+ geom_point()
 
 
 ```{r}
-ggplot(cardinal, aes(x="Date",y="Total Precipitation (in)"))+geom_point()
+ggplot(cardinal_data,aes(x=AvgT)) + geom_histogram(color="green",fill="orange")+labs(x="Average Temperature", y="Day",title ="Histogram of Average Temperature in Lake Wheeler")
 ```
 
