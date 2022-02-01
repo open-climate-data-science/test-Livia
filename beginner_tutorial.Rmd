@@ -40,7 +40,14 @@ cardinal_data <- read_csv("cardinal_data.csv",
          `Average Solar Radiation (W/m2)` = col_number(), 
          `Average Station Pressure (mb)` = col_number()))
 
+cardinal_data<-drop_na(cardinal_data)
+str(cardinal_data)
+cardinal_data$Date<-as.Date(cardinal_data$Date, tryFormats= c("%m/%d/%y"))
+view(cardinal_data)
+
+colnames(cardinal_data)=c("date","AvgT","MaxT","MinT","AvgLw","Tprep","AvgHum","AvgSm","AvgSt","AvgSr","AvgStp")
 ```
+
 
 ## Plotting Basic 
 
@@ -50,7 +57,7 @@ Here is a good link: https://www.rstudio.com/resources/cheatsheets/
 
 
 ```{r}
-
+ggplot(cardinal_data,aes(x= date ,y= AvgLw))+ geom_point()
 ```
 
 
