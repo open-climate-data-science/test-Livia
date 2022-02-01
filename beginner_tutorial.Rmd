@@ -46,7 +46,7 @@ cardinal_data <- read_csv("cardinal_data.csv",
 
 Text on *plotting*. 
 
-Here is a good link: *Livia puts link here*
+Here is a good link: https://www.rstudio.com/resources/cheatsheets/
 
 
 ```{r}
