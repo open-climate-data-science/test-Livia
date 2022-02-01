@@ -65,3 +65,23 @@ ggplot(cardinal_data,aes(x= date ,y= AvgLw))+ geom_point()
 ggplot(cardinal, aes(x="Date",y="Total Precipitation (in)"))+geom_point()
 ```
 
+
+```{r}
+#me 
+ggplot(cardinal_data,aes(x=date,y=AvgT))+geom_line(aes(col=IfRain))
+```
+
+```{r}
+#livia 
+```
+
+
+### Making new Data
+
+```{r}
+#me making new data
+
+cardinal_data$IfRain<- (cardinal_data$Tprep>0)
+cardinal_data$IfRain<-as.factor(as.integer(cardinal_data$IfRain))
+```
+
