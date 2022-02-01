@@ -64,7 +64,10 @@ ggplot(cardinal_data,aes(x= date ,y= AvgLw))+ geom_point()
 
 
 ```{r}
+#livia
 ggplot(cardinal_data,aes(x=AvgT)) + geom_histogram(color="green",fill="orange")+labs(x="Average Temperature", y="Day",title ="Histogram of Average Temperature in Lake Wheeler")
+
+ggplot(cardinal_data,aes(x=date,y=AvgT,fill=IfRain))+geom_area()
 ```
 
 
@@ -73,9 +76,7 @@ ggplot(cardinal_data,aes(x=AvgT)) + geom_histogram(color="green",fill="orange")+
 ggplot(cardinal_data,aes(x=date,y=AvgT))+geom_line(aes(col=IfRain))
 ```
 
-```{r}
-#livia 
-```
+
 
 
 ### Making new Data
