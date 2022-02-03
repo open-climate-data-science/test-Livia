@@ -15,6 +15,8 @@ library(rnoaa)
 
 # Beginner Tutorial
 
+# Open Data Science
+
 
 ## Importing Data From Cardinals
 
@@ -86,5 +88,6 @@ ggplot(cardinal_data,aes(x=date,y=AvgT))+geom_line(aes(col=IfRain))
 
 cardinal_data$IfRain<- (cardinal_data$Tprep>0)
 cardinal_data$IfRain<-as.factor(as.integer(cardinal_data$IfRain))
+plot(cardinal_data$IfRain)
 ```
 
